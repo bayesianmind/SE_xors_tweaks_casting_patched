@@ -183,6 +183,7 @@ local water_tech = data.raw["technology"][mod_prefix .. "water-cooling-ingots"]
 if (settings.startup["xor-enable-cryo-cooled-casting-recipes"].value == true
     or settings.startup["xor-enable-water-cooled-casting-recipes"].value == true) then
   data.raw["assembling-machine"]["se-casting-machine"].fluid_boxes = {
+    -- Base SE fluid boxes (first 2)
     {
       production_type = "input",
       pipe_picture = pipe_pics,
@@ -190,27 +191,7 @@ if (settings.startup["xor-enable-cryo-cooled-casting-recipes"].value == true
       base_area = 1,
       base_level = -1,
       height = 2,
-      pipe_connections = {{ type="input-output", position = {-2, .5} }},
-      secondary_draw_orders = { north = -1, east = -1, west = -1 }
-    },
-    {
-      production_type = "output",
-      pipe_picture = pipe_pics,
-      pipe_covers = pipecoverspictures(),
-      base_area = 1,
-      base_level = 1,
-      height = 2,
-      pipe_connections = {{ type="output", position = {0, -1.5} }},
-      secondary_draw_orders = { north = -1, east = -1, west = -1 }
-    },
-    {
-      production_type = "input",
-      pipe_picture = pipe_pics,
-      pipe_covers = pipecoverspictures(),
-      base_area = 1,
-      base_level = -1,
-      height = 2,
-      pipe_connections = {{ type="input-output", position = {2, .5} }},
+      pipe_connections = {{ type="input-output", position = {0, -1.5} }},
       secondary_draw_orders = { north = -1, east = -1, west = -1 }
     },
     {
@@ -221,6 +202,28 @@ if (settings.startup["xor-enable-cryo-cooled-casting-recipes"].value == true
       base_level = -1,
       height = 2,
       pipe_connections = {{ type="input-output", position = {0, 1.5} }},
+      secondary_draw_orders = { north = -1, east = -1, west = -1 }
+    },
+    -- input on top for cryoslush or water
+    {
+      production_type = "input",
+      pipe_picture = pipe_pics,
+      pipe_covers = pipecoverspictures(),
+      base_area = 1,
+      base_level = -1,
+      height = 2,
+      pipe_connections = {{ type="input", position = {-2, .5} }},
+      secondary_draw_orders = { north = -1, east = -1, west = -1 }
+    },
+    -- output on bottom for steam
+    {
+      production_type = "output",
+      pipe_picture = pipe_pics,
+      pipe_covers = pipecoverspictures(),
+      base_area = 1,
+      base_level = 1,
+      height = 2,
+      pipe_connections = {{ type="output", position = {2, .5} }},
       secondary_draw_orders = { north = -1, east = -1, west = -1 }
     }
   }
