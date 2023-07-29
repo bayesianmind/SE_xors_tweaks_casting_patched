@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 2023-07-28
+  Changes:
+    - Forked from Xor's mod, changed the casting machine's fluid boxes to match Space Exploration's while adding the new boxes for the new fluid inputs and outputs.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 2023-04-22
   Changes:
