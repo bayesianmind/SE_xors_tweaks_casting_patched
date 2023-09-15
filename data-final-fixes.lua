@@ -392,11 +392,11 @@ if mods["Krastorio2"] then
     -- that's why we use a different graphic instead, silver plate from: https://github.com/kirazy/reskins-angels/blob/master/graphics/icons/smelting/plates/angels-plate-silver.png
     -- it fits the SE steel ingot color so well they now look a bit too similar but *shrug*
     --[[data.raw["item"]["steel-plate"].icon = "__base__/graphics/icons/steel-plate.png"]]
-    data.raw["item"]["steel-plate"].icon = "__SE_xors_tweaks__/graphics/icons/angels-plate-silver.png"
+    data.raw["item"]["steel-plate"].icon = "__SE_xors_tweaks_casting_patched__/graphics/icons/angels-plate-silver.png"
     --[[data.raw.recipe["se-steel-ingot-to-plate"].icons =
         data_util_SE_PP.sub_icons("__base__/graphics/icons/steel-plate.png", "__space-exploration-graphics__/graphics/icons/steel-ingot.png")]]
     data.raw.recipe["se-steel-ingot-to-plate"].icons =
-        data_util_SE_PP.sub_icons("__SE_xors_tweaks__/graphics/icons/angels-plate-silver.png", "__space-exploration-graphics__/graphics/icons/steel-ingot.png")
+        data_util_SE_PP.sub_icons("__SE_xors_tweaks_casting_patched__/graphics/icons/angels-plate-silver.png", "__space-exploration-graphics__/graphics/icons/steel-ingot.png")
 
     -- at this point the steel icon has changed, so we can just use the exact SE code to do this
     data.raw.recipe["se-empty-barrel-reprocessing"].icons = data_util_SE.transition_icons(

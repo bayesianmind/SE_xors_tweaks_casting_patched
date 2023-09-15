@@ -1,6 +1,6 @@
 {
 	"name": "SE_xors_tweaks_casting_patched",
-	"version": "1.3.6",
+	"version": "1.3.7",
 	"title": "xors Space Exploration (+ Krastorio 2) tweaks: casting SE compatible",
 	"author": "xor, with some code from bayesianmind, Wretlaw120 & Rekales",
 	"description": "Xor's mod, but patched to make the casting machines use the same fluid directions as SE. Tweaks and additions of various small things for SE (and K2 if installed). All toggleable via settings! Check mod description for list.",
